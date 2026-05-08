@@ -9,7 +9,7 @@ using namespace std;
 
 // Function clear Screen
 void clear() {
-    // ANSI escape codes ដើម្បីសម្អាតអេក្រង់
+    // // ANSI escape codes to clear the screen
     cout << "\033[2J\033[H";
 }
 
@@ -21,7 +21,7 @@ void progressBar(double value) {
     cout << "\033[1;37m["; // White for the frame [
     for (int i = 0; i < barWidth; i++) {
         if (i < filled)
-            cout << "\033[1;36m#"; // ពណ៌ខៀវ (Cyan) សម្រាប់ភាគរយដែលដើររួច
+            cout << "\033[1;36m#"; // ពណ៌ខៀវ (Cyan) For the percentage that has been walked
         else
             cout << "\033[1;30m-"; // ពណ៌ប្រផេះ សម្រាប់ភាគរយដែលនៅសល់
     }
