@@ -5,36 +5,37 @@
 int main() {
     float t = 0;
     // Hide cursor and clear screen
-    printf("\033[?H25l");
-
+    printf("\033[?H25l"); 
+    
     while(1) {
-
         // Reset cursor to top-left and print header
-        printf("\033[H\033[1;35m[ STEREO AUDIO WAVEFORM ]\033[1;34m\n\n");
+        printf("\033[H\033[1;35m[ AUDIO WAVEFORM \033\1;35m]\n\n");
         for(int i = 0; i < 15; i++) {
             // Calculate wave positions (scaled to fit 20-character bars)
             // Added '*' operators and fixed variable names
             int left = (sin(t + i * 0.5) * cos(t * 1.5) + 1) * 10;
-            int right = (sin(t + i * 0.5) * cos(t * 1.5) + 1) * 10;
+            int right = (sin(t + i * 0.3) * cos(t * 1.5) + 1) * 10;
 
-            printf(" █ \033[1;37m █ \033[1;36m|");  // Left padding
+            printf(" █ \033[1;37m█\033[1;36m ⣿⣿");  // Left padding
 
             // Left Channel Bar
             printf("\033[1;32m|");
-            for(int j = 0; j < 20; j++) printf(j < left ? "_" : "█");
-            printf(" █ \033[1;37m █ \033[1;36m|");
+            for(int j = 0; j < 20; j++) printf(j < left ? "-" : "⣿");
+            printf(" ⣿⣿ \033[1;37m█\033[1;36m|");
 
             // Right Channel Bar
-            for(int j = 0; j < 20; j++) printf(j < right ? "█" : "•");
+            for(int j = 0; j < 20; j++) printf(j < right ? "-█" : "•");
             printf(" █ \n\033[0m");
         }
 
-        printf("\n\033[1;33m > CH-1  : ACTIVE || CH-2 : ACTIVE\0>
-        t += 0.1;       // Smooths the animation
+        int percentage = 90;   // អាចប្តូរតម្លៃបាន
+
+        printf("\n\033[1;33m > [CH2]: ACTIVE || [CH-2 %d%%]: ACTIVE\033[0m\n", percentage);
+
+        t -= 0.1;       // Smooths the animation
         usleep(50000);  // 50ms delay
     }
 
     return 0;
 }
-
-
+   
