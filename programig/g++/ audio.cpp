@@ -29,7 +29,7 @@ int main() {
             printf(" █ \n\033[0m");
         }
 
-        printf("\n \033[1;33m > CH-1 %d%2 : ACTIVE || CH-2 : b%2% ACTIVE\0>
+        printf("\n\033[1;33m > CH-1  : ACTIVE || CH-2 : ACTIVE\0>
         t += 0.1;       // Smooths the animation
         usleep(50000);  // 50ms delay
     }
