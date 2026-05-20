@@ -23,7 +23,7 @@ command -v curl >/dev/null 2>&1 || pkg install curl -y
 
 # -------- LOGO --------
 echo -e "$C"
-figlet "TOOL.X" | lolcat
+figlet "CYBER.TOOL.ZSH" | lolcat
 echo -e "$Y==== MINI CYBER TOOL-KIT ====$X"
 echo
 
@@ -41,13 +41,13 @@ sleep 1
 
 # -------- MENU --------
 while true; do
-
+"\033[1;36m"
 echo
 echo -e "$C[1] System Info"
 echo -e "[2] Network Check"
 echo -e "[3] API Test"
 echo -e "[4] Storage Info"
-echo -e "[5] Matrix Mode"
+echo -e "[5] snake Mode"
 echo -e "[0] Exit$X"
 echo
 
@@ -55,7 +55,7 @@ read -p "Select option > " choice
 
 case $choice in
 
-1)
+[1]
     clear
     echo -e "$Y=== SYSTEM INFO ===$X"
     uname -a
@@ -63,13 +63,13 @@ case $choice in
     termux-battery-status 2>/dev/null
     ;;
 
-2)
+[2]
     clear
     echo -e "$Y=== NETWORK CHECK ===$X"
     curl -I https://google.com
     ;;
 
-3)
+[3]
     clear
     echo -e "$Y=== API TEST ===$X"
     read -p "Enter URL > " url
@@ -77,25 +77,25 @@ case $choice in
     curl -s "$url"
     ;;
 
-4)
+[4]
     clear
     echo -e "$Y=== STORAGE INFO ===$X"
     df -h
     ;;
 
-5)
+[5]
     clear
-    command -v cmatrix >/dev/null 2>&1 || pkg install cmatrix -y
-    cmatrix -b -u 4 -C green
+    command -v snake >/dev/null 2>&1 || pkg install snask -y
+    snake 
     clear
     ;;
 
-0)
-    echo -e "$R[ EXIT TOOL.X ]$X"
+[0]
+    echo -e "$R[ EXIT CYBER.TOOL.ZSH ]$X"
     exit
     ;;
 
-*)
+[*]
     echo -e "$R[ INVALID OPTION ]$X"
     ;;
 
