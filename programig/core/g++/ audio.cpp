@@ -30,9 +30,9 @@ int main() {
 
         int percentage = 90;   // អាចប្តូរតម្លៃបាន
 
-        printf("\n\033[1;33m > [CH2]: ACTIVE || [CH-2 %d%%]: ACTIVE\033[0m\n", percentage);
+        printf("\n\033[1;33m > [CH2]: ACTIVE || CH-2 : ACTIVE\033[0m\n", percentage);
 
-        t -= 0.1;       // Smooths the animation
+        t += 0.1;       // Smooths the animation
         usleep(50000);  // 50ms delay
     }
 
