@@ -110,55 +110,86 @@ echo -e "[0] Exit$X"
 echo
 
 read -p "Select option > " choice
+                                                                                                                                    case $choice in
+    1)
+        clear
+        echo -e "${Y}=== SYSTEM INFO ===${X}"                                                                                               uname -a
+        echo
+        termux-battery-status 2>/dev/null
+        sleep 2
+        ;;
 
-case $choice in
+    2)
+        clear
+        echo -e "${Y}=== NETWORK CHECK ===${X}"
+        curl -I https://google.com
+        sleep 2
+        ;;
 
-[1]
-    clear
-    echo -e "$Y=== SYSTEM INFO ===$X"
-    uname -a
-    echo
-    termux-battery-status 2>/dev/null
-    ;;
+    3)
+            clear
+        echo -e "${Y}=== SYSTEM INFO ===${X}"
+        uname -a
+        echo
+        termux-battery-status 2>/dev/null
+        sleep 2
+        ;;
 
-[2]
-    clear
-    echo -e "$Y=== NETWORK CHECK ===$X"
-    curl -I https://google.com
-    ;;
+    2)
+        clear
+        echo -e "${Y}=== NETWORK CHECK ===${X}"
+        curl -I https://google.com
+        sleep 2
+        ;;
 
-[3]
-    clear
-    echo -e "$Y=== API TEST ===$X"
-    read -p "Enter URL > " url
-    echo
-    curl -s "$url"
-    ;;
+    3)
+        clear
+        echo -e "${Y}=== API TEST ===${X}"
+        read -p "Enter URL e.g. https://api.example.com/endpoint > " url
+        echo
+        if [ -z "$url" ]; then
+            echo -e "${R}[ERROR] URL cannot be empty${X}"
+        else
+            curl -s "$url" | head -20
+        fi
+        sleep 2
+        ;;
 
-[4]
-    clear
-    echo -e "$Y=== STORAGE INFO ===$X"
-    df -h
-    ;;
+    4)
+        clear
+        echo -e "${Y}=== STORAGE INFO ===${X}"
+        df -h
+        sleep       2                                                                                                                       ;;
 
-[5]
-    clear
-    command -v snake >/dev/null 2>&1 || pkg install snask -y
-    snake 
-    clear
-    ;;
+    5)
+        clear
+        command -v snake >/dev/null 2>&1 || pkg install snake -y
+        snake 
+        clear
+        ;;
 
-[0]
-    echo -e "$R[ EXIT CYBER.TOOL.ZSH ]$X"
-    exit
-    ;;
+    6)
+        clear
+        echo -e "${Y}=== PORT SCAN ===${X}"
+        read -p "Enter target e.g. 192.168.1.1: > " target
+        echo -e "${G}[*] Scanning ports on $target${X}"
+        for port in 22 80 443 8080 3306 5432; do
+            timeout 1 bash -c "echo >/dev/tcp/$target/$port" 2>/dev/null && \
+            echo -e "${G}[OPEN] Port $port${X}" || \
+            echo -e "${R}[CLOSED] Port $port${X}"
+        done
+        sleep 2
+       ;; 
 
-[*]
-    echo -e "$R[ INVALID OPTION ]$X"
-    ;;
+ 7)
+     echo -e "${R}[ EXITING TOOL ]${X}"
+     exit 0
+     ;;
 
+  *)
+        echo -e "${R}[ INVALID OPTION ]${X}"                                                                                               sleep 1
+   ;;
+fi
 esac
-
-done
 
 
