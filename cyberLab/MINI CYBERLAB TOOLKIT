@@ -28,7 +28,6 @@ echo -e "$Y==== MINI CYBER TOOL-KIT ====$X"
 echo
 
 sleep 1
-
 echo -e "${G}[✔] Initializing system...${X}"
 sleep 0.5
 echo -e "${G}[✔] Loading modules...${X}"
@@ -36,10 +35,69 @@ sleep 0.5
 echo -e "${G}[✔] Establishing secure shell...${X}"
 sleep 0.5
 echo -e "${G}[✔] Access Granted${X}"
-
 sleep 1
+echo " "
+echo "${blue}.  
+              ______   ______  _____ ____     _         _      __
+             / ___\ \ / / __ )| ____|  _ \  | |      / \      __                                      )
+            | |    \ V /|  _ \|  _| | |_) | | |     / _ \    |  _                                                    \
+            | |___  | | | |_) | |___|  _ < _| |___ / ___ \|  |_)                                                  |
+             \____| |_| |____/|_____|_| \_(_)_____/_/   \_\____/
+                                                         {$b}
+
+echo "$yellow                +~+~+~+~+~+~+v2.0.~+~+~+~+~+~+~ "
+echo " "
+echo "$green                         <--TERMOX.X-->"
+
+echo "$cyan                  ************************** "
+
+echo "$green                <~~Hackers setuptools41.2.0~~>"
+echo " "
+echo "$yellow              +~+~+~+~+~+~+~+~+~+~+~+~+~ "
+
+
+sleep 3.50
+echo " "
+echo $p 'Please Wait ===+['$b'.../                             '$p'\'
+sleep 0.4
+clear
+echo  $p 'Please Wait ===+['$b'....\                            '$p']|'
+sleep 0.4
+clear
+echo  $p 'Please Wait ===+['$b'...../                           '$p']/'                                                             sleep 0.
+clear
+echo  $p 'Please Wait ===+['$b'......\                          '$p']\'
+sleep 0.4
+clear
+echo  $p 'Please Wait ===+['$b'......./                         '$p']|'
+sleep 0.4
+clear
+echo  $p 'Please Wait ===+['$b'........./                       '$p']/'
+sleep 0.5
+clear
+echo  $p 'Please Wait ===+['$b'..........\                      '$p']|'
+sleep 0.5                                                                                                                           clear
+echo  $p 'Please Wait ===+['$b'............/                    '$p']\'
+sleep 0.5
+clear
+echo  $p 'Please Wait ===+['$b'..............\                 '$p']/'                                                              sleep 0.5
+clear
+echo  $p 'Please Wait ===+['$b'................/               '$p']|'
+sleep 0.6
+clear
+echo  $p 'Please Wait ===+['$b'...................\            '$p']/'
+sleep 0.6
+clear
+echo  $p 'Please Wait ===+['$b'....................../         '$p']\'
+sleep 0.6
+clear
+echo  $p 'Please Wait ===+['$b'..........................\     '$p']|'
+sleep 0.5
+clear
+figlet "MINI.TOOLKID" | lolcat
 
 # -------- MENU --------
+
 while true; do
 "\033[1;36m"
 echo
