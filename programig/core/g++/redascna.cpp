@@ -52,7 +52,7 @@ int main() {
         printf("\033[1;32m|████████████████████████████████████████|\033[0m\n");
         
         // Edit %d and %f to be correct
-        printf(" SIGNAL: [ \033[1;33mSTABLE\033[0m ] |📡<<[U+2809]>>SCANNING: %d%% | POS: X:%.2f Y:%.2f\n", 
+        printf(" SIGNAL: [ \033[1;33mSTABLE\033[0m ] |📡<<[U+2809]>>SCANNING: %d%% | POS: X:%s.2f Y:%.2f\n", 
                 (t * 100) / 200, cos(sweep_angle)*5, sin(sweep_angle)*5); 
         
         printf("\033[1;36m << CYBERLAB SECURITY SYSTEM | BIO-SIGNAL DETECTED >>\033[0m\n");
@@ -61,6 +61,6 @@ int main() {
     }
       
     printf("\n\033[1;32m[ TARGET LOCKED - SIMULATION COMPLETE ]\033[0m\n");
-    printf("\033[?25h"); // បង្ហាញ Cursor វិញ
+    printf("\033[?25h"); 
     return 0;
 }
