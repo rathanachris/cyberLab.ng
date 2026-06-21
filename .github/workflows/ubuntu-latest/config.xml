@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@beta-v4
       with:
         server: f1234.myhost.de
-        username: myFtpUserName
-        password: aPasswordWithoutSpacesOrSpecialCharactersLikeQuotes
+        username: myFtpUserName: cyberLab 
+        password: d7bf5fc75401a38e6ef79aa9efc7ab50ff6edc48
         protocol: ftps
-        port: 990
+        port: 3000
