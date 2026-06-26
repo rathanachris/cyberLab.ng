@@ -1,4 +1,4 @@
-pkg update && plg upgrade-y
+pkg update && plg upgrade -y
 
 pkg install git -y
 
