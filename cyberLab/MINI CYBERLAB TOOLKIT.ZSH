@@ -38,22 +38,22 @@ echo -e "${G}[✔] Access Granted${X}"
 sleep 1
 echo " "
 echo "${blue}.  
-              ______   ______  _____ ____     _         _      __
-             / ___\ \ / / __ )| ____|  _ \  | |      / \      __                                      )
-            | |    \ V /|  _ \|  _| | |_) | | |     / _ \    |  _                                                    \
+              ______   ______  _____ ____    __       _    _ ___
+             / ___\ \ / / __ )| ____|  _ \  | |      / \  |   __                                      )
+            | |    \ V /|  _ \|  _| | |_) | | |     / _ \ |   |  _                                                    \
             | |___  | | | |_) | |___|  _ < _| |___ / ___ \|  |_)                                                  |
-             \____| |_| |____/|_____|_| \_(_)_____/_/   \_\____/
+             \____| |_| |____/|_____|_| \_(_)_____/_/   \_\\____/
                                                          {$b}
 
-echo "$yellow                +~+~+~+~+~+~+v2.0.~+~+~+~+~+~+~ "
+echo "$yellow               +~+~+~+~+~+~+v2.0.~+~+~+~+~+~+~ "
 echo " "
 echo "$green                         <--TERMOX.X-->"
 
-echo "$cyan                  ************************** "
+echo "$cyan                  **************************"
 
 echo "$green                <~~Hackers setuptools41.2.0~~>"
 echo " "
-echo "$yellow              +~+~+~+~+~+~+~+~+~+~+~+~+~ "
+echo "$yellow                +~+~+~+~+~+~+~+~+~+~+~+~+~"
 
 
 sleep 3.50
@@ -111,7 +111,7 @@ echo
 
 read -p "Select option > " choice
                                                                                                                                     case $choice in
-    1)
+    1]
         clear
         echo -e "${Y}=== SYSTEM INFO ===${X}"                                                                                               uname -a
         echo
@@ -119,14 +119,14 @@ read -p "Select option > " choice
         sleep 2
         ;;
 
-    2)
+    2]
         clear
         echo -e "${Y}=== NETWORK CHECK ===${X}"
         curl -I https://google.com
         sleep 2
         ;;
 
-    3)
+    3]
             clear
         echo -e "${Y}=== SYSTEM INFO ===${X}"
         uname -a
@@ -135,14 +135,14 @@ read -p "Select option > " choice
         sleep 2
         ;;
 
-    2)
+    4]
         clear
         echo -e "${Y}=== NETWORK CHECK ===${X}"
         curl -I https://google.com
         sleep 2
         ;;
 
-    3)
+    5]
         clear
         echo -e "${Y}=== API TEST ===${X}"
         read -p "Enter URL e.g. https://api.example.com/endpoint > " url
@@ -155,20 +155,20 @@ read -p "Select option > " choice
         sleep 2
         ;;
 
-    4)
+    6]
         clear
         echo -e "${Y}=== STORAGE INFO ===${X}"
         df -h
         sleep       2                                                                                                                       ;;
 
-    5)
+    7]
         clear
         command -v snake >/dev/null 2>&1 || pkg install snake -y
         snake 
         clear
         ;;
 
-    6)
+    8)
         clear
         echo -e "${Y}=== PORT SCAN ===${X}"
         read -p "Enter target e.g. 192.168.1.1: > " target
@@ -181,7 +181,7 @@ read -p "Select option > " choice
         sleep 2
        ;; 
 
- 7)
+ 9]
      echo -e "${R}[ EXITING TOOL ]${X}"
      exit 0
      ;;
