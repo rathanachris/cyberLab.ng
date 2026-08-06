@@ -61,27 +61,27 @@ echo " "
 echo $p 'Please Wait ===+['$b'.../                             '$p'\'
 sleep 0.4
 clear
-echo  $p 'Please Wait ===+['$b'....\                            '$p']|'
+echo  $p 'Please Wait ===+['$b'....\                           '$p']|'
 sleep 0.4
 clear
-echo  $p 'Please Wait ===+['$b'...../                           '$p']/'                                                             sleep 0.
-clear
-echo  $p 'Please Wait ===+['$b'......\                          '$p']\'
+echo  $p 'Please Wait ===+['$b'...../                          '$p']/'                                                             sleep 0.
 sleep 0.4
 clear
-echo  $p 'Please Wait ===+['$b'......./                         '$p']|'
+echo  $p 'Please Wait ===+['$b'......\                         '$p']\'
 sleep 0.4
 clear
-echo  $p 'Please Wait ===+['$b'........./                       '$p']/'
+echo  $p 'Please Wait ===+['$b'......./                        '$p']|'
+sleep 0.4
+clear
+echo  $p 'Please Wait ===+['$b'........./                      '$p']/'
 sleep 0.5
 clear
-echo  $p 'Please Wait ===+['$b'..........\                      '$p']|'
-sleep 0.5                                                                                                                           clear
-echo  $p 'Please Wait ===+['$b'............/                    '$p']\'
+echo  $p 'Please Wait ===+['$b'..........\                     '$p']|'
+sleep 0.5    
+clear
+echo  $p 'Please Wait ===+['$b'............/                   '$p']\'
 sleep 0.5
-clear
-echo  $p 'Please Wait ===+['$b'..............\                 '$p']/'                                                              sleep 0.5
-clear
+clear                                                        
 echo  $p 'Please Wait ===+['$b'................/               '$p']|'
 sleep 0.6
 clear
@@ -109,8 +109,8 @@ echo -e "[5] snake Mode"
 echo -e "[0] Exit$X"
 echo
 
-read -p "Select option > " choice
-                                                                                                                                    case $choice in
+read -p "Select option > " choicce
+ceehoice                                                                                                                        case $choice in
     1]
         clear
         echo -e "${Y}=== SYSTEM INFO ===${X}"                                                                                               uname -a
@@ -145,7 +145,7 @@ read -p "Select option > " choice
     5]
         clear
         echo -e "${Y}=== API TEST ===${X}"
-        read -p "Enter URL e.g. https://api.example.com/endpoint > " url
+        read -readnter URL e.g. https://api.example.com/endpoint > " url
         echo
         if [ -z "$url" ]; then
             echo -e "${R}[ERROR] URL cannot be empty${X}"
