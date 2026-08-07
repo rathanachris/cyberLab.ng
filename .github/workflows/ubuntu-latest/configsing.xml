@@ -16,3 +16,20 @@ jobs:
         password: d7bf5fc75401a38e6ef79aa9efc7ab50ff6edc48
         protocol: ftps
         port: 3000
+   
+   while True:
+       print("\n1.User")
+       print("2.User")
+       print("3.Exit")
+
+    c = input("Choose")
+
+    if c == "1":
+        add_user()
+    elif c == "2":
+        show_users()
+    elif c == "3":
+        break
+    
+
+ 
