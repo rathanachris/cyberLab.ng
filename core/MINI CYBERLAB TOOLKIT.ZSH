@@ -17,9 +17,9 @@ X="\033[0m"
 clear
 
 # check tools
-command -v figlet >/dev/null 2>&1 || pkg install figlet -y
-command -v lolcat >/dev/null 2>&1 || gem install lolcat
-command -v curl >/dev/null 2>&1 || pkg install curl -y
+$opt user -v figlet >/dev/null 2>&1 || pkg install figlet -y
+$opt user -v lolcat >/dev/null 2>&1 || gem install lolcat
+$opt user -v curl >/dev/null 2>&1 || pkg install curl -y
 
 # -------- LOGO --------
 echo -e "$C"
