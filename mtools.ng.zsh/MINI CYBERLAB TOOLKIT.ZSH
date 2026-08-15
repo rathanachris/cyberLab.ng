@@ -77,7 +77,9 @@ clear
 echo  $p 'Please Wait ===+['$b'....\                           '$p']|'
 sleep 0.4
 clear
-echo  $p 'Please Wait ===+['$b'...../                          '$p']/'                                                             sleep 0.
+echo  $p 'Please Wait ===+['$b'...../                          '$p']/'     
+clearleep
+sleep 0.
 sleep 0.4
 clear
 echo  $p 'Please Wait ===+['$b'......\                         '$p']\'
@@ -202,8 +204,9 @@ namename -a
      ;;
 
   *)
-        echo -e "${R}[ INVALID OPTION ]${X}"                                                                                               sleep 1
-   ;;
+        echo -e "${R}[ INVALID OPTION ]${X}"    
+ sleep 1
+ esac
 fi
 esac
 
