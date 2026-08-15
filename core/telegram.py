@@ -11,16 +11,20 @@ def send_alert(msg):
         "text": msg
     })
 
-def sha512_file(path):                                                h = hashlib.sha512()
-    with open(path, "rb") as f:                                           h.update(f.read())
+def sha512_file(path):           
+    h = hashlib.sha512()
+    with open(path, "rb") as f:    
+    h.update(f.read())
     return h.hexdigest()
 
-EXPECTED_HASH = open("dns_gilyer.sha512").read().split()[0]       CURRENT_HASH  = sha512_file("dns_filter.txt")
+EXPECTED_HASH = open("dns_gilyer.sha512").read().split()[0]       
+CURRENT_HASH  = sha512_file("dns_filter.txt")
 
 if CURRENT_HASH != EXPECTED_HASH:
     send_alert(
         "🚨 HASH MISMATCH!\n"
-        "Possible MITM / Supply-Chain Attack\n"                           f"Expected: {EXPECTED_HASH}\n"
+        "Possible MITM / Supply-Chain Attack\n"                          
+        f"Expected: {EXPECTED_HASH}\n"
         f"Got: {CURRENT_HASH}"
     )
 else:
