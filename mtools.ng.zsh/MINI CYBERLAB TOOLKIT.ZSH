@@ -1,8 +1,21 @@
-#!/data/data/com.termux/files/usr/bin/bash
 
-# =========================
+setup_script = r"""
+set -e
+echo "[+] Updating Termux..."
+pkg update -y
+pkg upgrade -e
+echo "[+] Installing tools..."
+pkg install -y python git curl wget clang
+echo "[+] Python:"
+python --version
+echo "[+] Git:"
+git --version
+mkdir -p ~/myproject
+echo "[+] Setup completed 🎭"
+"""
+# =============================
 # MINI CYBER TOOL-KIT 😈
-# =========================
+# ============================
 
 # -------- COLORS --------
 R="\033[1;31m"
@@ -41,11 +54,11 @@ echo "${blue}.
               ______   ______  _____ ____    __       _    _ ___
              / ___\ \ / / __ )| ____|  _ \  | |      / \  |   __                                      )
             | |    \ V /|  _ \|  _| | |_) | | |     / _ \ |   |  _                                                    \
-            | |___  | | | |_) | |___|  _ < _| |___ / ___ \|  |_)                                                  |
+            | |___  | | | |_) | |___|  _ < _| |___ / ___ \|  |_) /                                                 |
              \____| |_| |____/|_____|_| \_(_)_____/_/   \_\\____/
                                                          {$b}
 
-echo "$yellow               +~+~+~+~+~+~+v2.0.~+~+~+~+~+~+~ "
+echo "$yellow               +~+~+~+~+~+~+v4.0.~+~+~+~+~+~+~ "
 echo " "
 echo "$green                         <--TERMOX.X-->"
 
