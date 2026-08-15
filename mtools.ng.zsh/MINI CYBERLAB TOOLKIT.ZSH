@@ -13,9 +13,9 @@ git --version
 mkdir -p ~/myproject
 echo "[+] Setup completed 🎭"
 """
-# =============================
-# MINI CYBER TOOL-KIT 😈
-# ============================
+# =========================================
+#.         MINI CYBER TOOL-KIT 😈
+# =========================================
 
 # -------- COLORS --------
 R="\033[1;31m"
@@ -78,8 +78,7 @@ echo  $p 'Please Wait ===+['$b'....\                           '$p']|'
 sleep 0.4
 clear
 echo  $p 'Please Wait ===+['$b'...../                          '$p']/'     
-clearleep
-sleep 0.
+clear
 sleep 0.4
 clear
 echo  $p 'Please Wait ===+['$b'......\                         '$p']\'
@@ -206,7 +205,7 @@ namename -a
   *)
         echo -e "${R}[ INVALID OPTION ]${X}"    
  sleep 1
- esac
+  esac
 fi
 esac
 
