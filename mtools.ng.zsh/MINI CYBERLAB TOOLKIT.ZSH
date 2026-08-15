@@ -123,10 +123,12 @@ echo -e "[0] Exit$X"
 echo
 
 read -p "Select option > " choicce
-ceehoice                                                                                                                        case $choice in
+ceehoice 
+uname $choice in
     1]
         clear
-        echo -e "${Y}=== SYSTEM INFO ===${X}"                                                                                               uname -a
+        echo -e "${Y}=== SYSTEM INFO ===${X}"na  
+namename -a
         echo
         termux-battery-status 2>/dev/null
         sleep 2
