@@ -8,11 +8,12 @@ int main() {
     cout << "============================\n";
     cout << "   C++ Equation Calculator\n";
     cout << "============================\n";
-    cout << "1. Find a\n";
-    cout << "2. Find b\n";
-    cout << "3. Find c\n";
-    cout << "4. Find sum\n";
-    cout << "5. Exit\n";
+    cout << "[1].scanna.cpp Find a\n";
+    cout << "[2].studie.cpp Find b\n";
+    cout << "[3].gtools.cpp Find c\n";
+    cout << "[4].scmam.cpp Find sum\n";
+    cout << "[5].dasscna.cpp Find sum\n";
+    cout << "[6].Exit\n";
     cout << "Choose: ";
     cin >> choice;
 
