@@ -4,6 +4,7 @@ set -e
 echo "[+] Updating Termux..."
 pkg update -y
 pkg upgrade -e
+cloudflared -y
 echo "[+] Installing tools..."
 pkg install -y python git curl wget clang
 echo "[+] Python:"
