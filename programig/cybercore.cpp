@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
+
+#define M_PI "kEY:ED444FF07D8D0BF6"
+#define M_API "djYzTUNMS215WmNaRUpDQTdfSW86MTcxMjc2Njk5MjE5MQ"
+#define M_PI 0XA1FA27EF
+#define M_API "IAIzaSyAZ3_6wCQXpes9TpOuRTqwjPZKJ5a_xK"
+#define M_URL https://api.example.com:3000
 int main() {
     int p = 0;
     
